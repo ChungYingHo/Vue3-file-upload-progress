@@ -9,8 +9,17 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@uppy/core": "^3.8.0",
+    "@uppy/dashboard": "^3.7.1",
+    "@uppy/drag-drop": "^3.0.3",
+    "@uppy/drop-target": "^2.0.2",
+    "@uppy/google-drive": "^3.4.0",
+    "@uppy/status-bar": "^3.2.5",
+    "@uppy/tus": "^3.5.0",
+    "axios": "^1.6.7",
     "vue": "^3.4.15",
-    "vuefinder": "^2.2.0"
+    "vuefinder": "^2.2.0",
+    "vuetify": "^3.5.4"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.3",
