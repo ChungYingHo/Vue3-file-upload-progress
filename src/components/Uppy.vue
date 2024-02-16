@@ -9,7 +9,7 @@ import { onMounted } from 'vue';
 import Uppy from '@uppy/core';
 import Dashboard from '@uppy/dashboard';
 import GoogleDrive from '@uppy/google-drive';
-import Tus from '@uppy/tus';
+import XHR from '@uppy/xhr-upload';
 import DropTarget from '@uppy/drop-target';
 
 import '@uppy/core/dist/style.css';
@@ -30,8 +30,8 @@ onMounted(() => {
         target: Dashboard,
         companionUrl: 'https://companion.uppy.io',
     })
-    .use(Tus, {
-        endpoint: 'https://tusd.tusdemo.net/files/', // Example endpoint
+    .use(XHR, {
+        endpoint: 'https://httpbin.org/post',
     })
     .use(DropTarget, {
         target: document.body,

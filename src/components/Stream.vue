@@ -70,7 +70,7 @@ const uploadFile = async (fileObj) => {
 
     try {
       console.time('useFetch:')
-      await useFetch('https://httpbin.org/post', {
+      await fetch('https://httpbin.org/post', {
         method: 'POST',
         body: rs,
         duplex: 'half',
@@ -82,24 +82,21 @@ const uploadFile = async (fileObj) => {
     }
 }
 
-const uploadFiles = () => {
+const uploadFiles = async () => {
     if(state.files.length === 0){
       alert('No selected file!')
       return
     }else{
-      const uploadPromises = state.files.map(uploadFile)
-      Promise.all(uploadPromises)
-      .then(() => {
-        alert('All done')
-      })
-      .catch((error) => {
-        console.error(error)
-        alert('Something error ><')
-      })
-      .finally(() => {
-        state.uploading = false
-        state.files = []
-      })
+      try {
+        await Promise.all(state.files.map(file => uploadFile(file)));
+        alert('All done');
+      } catch (error) {
+        console.error(error);
+        alert('Something error ><');
+      } finally {
+        state.uploading = false;
+        state.files = [];
+      }
     }
 }
 </script>
