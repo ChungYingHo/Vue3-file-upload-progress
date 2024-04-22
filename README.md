@@ -1,29 +1,3 @@
-# vue3-fileManager
-
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+## Vue3 file upload progress
+此專案為測試 axios、readable stream 跟 uppy 套件的上傳進度監聽功能。  
+詳細內容請參閱我部落格[這篇文章](https://codefictionist.com/docs/%E7%AD%86%E8%A8%98%E6%9C%AC/%E5%89%8D%E7%AB%AF%E7%B6%9C%E5%90%88%E9%96%8B%E7%99%BC/upload)。

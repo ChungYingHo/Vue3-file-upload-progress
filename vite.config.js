@@ -13,7 +13,7 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   },
-  base: '/vue3-file-upload/',
+  base: '/Vue3-file-upload-progress/',
   build: {
     outDir: "docs"
   }
